@@ -1,0 +1,225 @@
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin: 0;
+}
+/* this class specifies shape */
+.coloumn1 {
+  display: block;
+  height: 100%;
+  width: 40%;
+}
+
+.coloumn2 {
+  height: 100%;
+  width: 60%;
+}
+
+.coloumn3 {
+  height: 100%;
+  width: 60%;
+}
+.coloumn4 {
+  height: 100%;
+  width: 60%;
+}
+.coloumn5 {
+  height: 100%;
+  width: 60%;
+}
+.subox1 {
+  height: 33.33%;
+  width: 100%;
+}
+.subox2 {
+  height: 60%;
+  width: 100%;
+  display: flex;
+}
+.subox3 {
+  height: 40%;
+  width: 100%;
+}
+.square1 {
+  height: 100%;
+  width: 50%;
+}
+.square2 {
+  height: 100%;
+  width: 50%;
+}
+.subCol1 {
+  height: 30%;
+  width: 100%;
+}
+.subCol2 {
+  height: 70%;
+  width: 100%;
+}
+.subCol3 {
+  height: 30%;
+  width: 100%;
+}
+.subCol4 {
+  height: 70%;
+  width: 100%;
+}
+.subCol5 {
+  height: 40%;
+  width: 100%;
+}
+.subCol6 {
+  height: 60%;
+  width: 100%;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.hide {
+  display: none;
+}
+img {
+  max-height: 100%;
+  max-width: 90%;
+}
+.translucent {
+  opacity: 0.2;
+}
+.clickable2 {
+  position: relative;
+  overflow: hidden;
+  filter: brightness(85%);
+  transition: all 0.4s ease;
+}
+
+.clickable2:hover {
+  cursor: pointer;
+  transform: scale(1.2) rotate(-10deg) skewX(10deg); /* Hyper warp effect */
+  filter: brightness(120%);
+  animation: neonGlow 2s ease-in-out infinite alternate;
+  filter: brightness(100%) drop-shadow(2px 8px 6px rgba(17, 13, 253, 0.7));
+}
+
+.clickable2:active {
+  transform: scale(0.8) rotate(5deg);
+  filter: brightness(100%);
+  filter: drop-shadow(0px 0px 5px rgb(245, 54, 252));
+}
+
+@keyframes neonGlow {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.2) rotate(-10deg);
+  }
+}
+
+/* these classes specify color */
+.orange {
+  background-color: #f18d09;
+}
+.blue {
+  background-color: #1079db;
+}
+.light-blue {
+  background-color: #c1f7f7;
+}
+.light-pink {
+  background-color: #f8c8f2;
+}
+.green {
+  background-color: #0b8607;
+}
+.pastel-pink {
+  background-color: #fca5c6;
+}
+.dark-red {
+  background-color: #830303;
+}
+.teal {
+  background-color: #09b4b4;
+}
+.pastel-yellow {
+  background-color: #f5ee89;
+}
+.bright-green {
+  background-color: #3dfd4d;
+}
+.dark-blue {
+  background-color: #0a07aa;
+}
+.light-pink {
+  background-color: #f396e6;
+}
+.orange {
+  background-color: #dd5d13;
+}
+.dark-yellow {
+  background-color: #c5c20b;
+}
+.pink-red {
+  background-color: #f5183d;
+}
+/* styles if the screen is 600px or less */
+@media only screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+  .coloumn1 {
+    height: 20%;
+    width: 100%;
+    display: flex;
+  }
+
+  .coloumn2 {
+    height: 80%;
+    width: 100%;
+  }
+  .coloumn3 {
+    height: 80%;
+    width: 100%;
+  }
+  .coloumn4 {
+    height: 80%;
+    width: 100%;
+  }
+  .coloumn5 {
+    height: 80%;
+    width: 100%;
+  }
+  .subox1 {
+    height: 100%;
+    width: 33.33%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .subox2 {
+    display: block;
+  }
+  .square1 {
+    height: 50%;
+    width: 100%;
+  }
+  .square2 {
+    height: 50%;
+    width: 100%;
+  }
+  .coloumn3 {
+    height: 80%;
+    width: 100%;
+  }
+  .coloumn4 {
+    height: 80%;
+    width: 100%;
+  }
+  .coloumn5 {
+    height: 80%;
+    width: 100%;
+  }
+}
