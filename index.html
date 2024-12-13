@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Mystery Vacation</title>
+    <link rel="shortcut Icon" type="image/png" href="images/plamTree.png" />
+  </head>
+  <body>
+    <!-- children of the body element -->
+    <div class="coloumn1 orange" id="firstColumn">
+      <div class="subox1 light-blue center-content" id="blueBox">
+        <img
+          src="images/tropicalGift.png"
+          id="img-1"
+          onclick="firstTextAppearImgs()"
+          onclick="playSong()"
+          class="clickable2"
+        />
+      </div>
+      <div class="subox1 light-pink center-content" id="pinkBox">
+        <img
+          src="images/tropicalGift.png"
+          id="img-2"
+          onclick="secondTextAppear()"
+          onclick="playSong()"
+          class="clickable2"
+        />
+      </div>
+      <div class="subox1 pastel-yellow center-content" id="yellowBox">
+        <img
+          src="images/tropicalGift.png"
+          id="img-3"
+          onclick="thridTextAppear()"
+          onclick="playSong()"
+          class="clickable2"
+        />
+      </div>
+    </div>
+    <!-- DEFAULT COL -->
+    <div class="coloumn2 blue" id="secondColumn">
+      <div class="subox2 pink" id="pinkbox1">
+        <div class="square1 yellow">
+          <div class="subCol1 pastel-yellow center-content">
+            <img src="images/FoodText.png" id="foodTxt" />
+          </div>
+          <div class="subCol2 pastel-pink center-content">
+            <img src="images/questionMark.png" id="foodMark" />
+          </div>
+        </div>
+        <div class="square2 pastel-pink">
+          <div class="subCol3 pastel-yellow center-content" id="ScenaryBox">
+            <img src="images/SceneryText.png" id="ScenaryTxt" />
+          </div>
+          <div class="subCol4 pastel-pink center-content">
+            <img src="images/questionMark.png" id="sceneryMark" />
+          </div>
+        </div>
+      </div>
+      <div class="subox3 pastel-pink" id="pinkbox1">
+        <div class="subCol5 pastel-yellow center-content" id="musicBox">
+          <img src="images/MusicTag.png" id="musicTxt" />
+        </div>
+        <div class="subCol6 pastel-pink center-content">
+          <img src="images/questionMark.png" id="MusicMark" />
+        </div>
+      </div>
+    </div>
+    <!-- VIDEO COL -->
+    <div class="coloumn3 pastel-pink center-content hide" id="thirdColumn">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/gC7O_f95o18?si=mg0X264ZKnMgNEVm"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="coloumn4 pastel-pink center-content hide" id="fourthColumn">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/qbAfpZ6yGas?si=-8sUACucIQ53kqWG"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="coloumn5 pastel-pink center-content hide" id="fifthColumn">
+      <iframe
+        id="itlyVid"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Ppbw4DHwgdI?si=BRq52P557G52LDYt&amp;start=6"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <audio src="sounds/audio.wav" id="mexico_song"></audio>
+    <audio src="sounds/italinMusic.mp3" id="italian_song"></audio>
+    <audio src="sounds/hawaiinMusic.mp3" id="hawaii_song"></audio>
+    <script src="scripts.js"></script>
+  </body>
+</html>
